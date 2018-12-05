@@ -1,0 +1,227 @@
+//===========================================
+// -Navbar start
+//===========================================
+body {
+	font-family: $font-default;
+}
+
+.main-navbar {
+	display: inline-block;
+	width: 100%;
+	margin-top: rem(30);
+	border-bottom: 1px solid $grey;
+	position: relative;
+
+	.logo-side {
+		padding: rem(16);
+		float: left;
+
+		.logo {
+			width: 40px;
+			height: 40px;
+			display: inline-block;
+			vertical-align: middle;
+			padding: rem(15);
+		}
+
+		a {
+			margin: rem(20);
+			text-decoration: none;
+			color: $white;
+		}
+	}
+
+	i {
+		padding: rem(10);
+		font-size: rem(13);
+	}
+
+	.phone {
+		float: left;
+		color: $white;
+		margin-top: rem(40);
+		padding-left: rem(20);
+		border-left: 1px solid $white;
+	}
+
+	.phone:hover {
+		color: #9ae045;
+		cursor: pointer;
+	}
+
+	.navbar {
+		color: $white;
+		float: right;
+
+		ul {
+			list-style-type: none;
+			float: left;
+
+			li {
+				float: left;
+
+				&:nth-child(7) {
+					a {
+						color: #38d491;
+						border-bottom: 1px solid #38d491;
+						padding-bottom: 1px;
+						letter-spacing: 1px;
+					}
+				}
+
+				a:hover {
+					color: #9ae045;
+					cursor: pointer;
+				}
+			}
+
+			a {
+				display: inline-block;
+				text-decoration: none;
+				color: $white;
+				margin: rem(20);
+			}
+
+		}
+
+		.extras {
+			float: right;
+			margin-top: rem(12);
+
+			i {
+				font-size: rem(18)
+			}
+
+			button {
+				margin-top: rem(5);
+				border-radius: rem(30);
+			}
+
+			.sign-in {
+				border: 2px solid $grey;
+				padding: 15px 36px;
+				font-size: rem(14);
+				margin-right: rem(12);
+				background: transparent;
+				transition: 400ms;
+			}
+
+			.sign-in:hover {
+				background: #9ae045;
+			}
+
+			.sign-up {
+				padding: 15px 36px;
+				margin-right: rem(12);
+				border: none;
+				font-size: rem(14);
+				transition: 400ms;
+				background: linear-gradient(to right, $green);
+
+			}
+
+			.sign-up:hover {
+				background: #38d491;
+			}
+		}
+	}
+
+	.humburger {
+		position: absolute;
+		right: 10px;
+		top: 20px;
+		color: white;
+		display: none;
+	}
+}
+
+.side-nav {
+	width: 70%;
+	height: 100vh;
+	position: fixed;
+	background: linear-gradient(to left, $green);
+	right: 0;
+	display: none;
+	z-index: 10;
+
+	ul {
+		list-style-type: none;
+
+		li {
+			a:hover {
+				color: #9ae045;
+				cursor: pointer;
+			}
+		}
+
+		a {
+			display: inline-block;
+			text-decoration: none;
+			color: $white;
+			margin: rem(20);
+		}
+
+	}
+
+	.extras {
+		margin-top: rem(12);
+
+		i {
+			font-size: rem(18)
+		}
+
+		button {
+			margin-top: rem(5);
+			border-radius: rem(30);
+		}
+
+		.sign-in {
+			border: 2px solid $grey;
+			padding: 15px 36px;
+			font-size: rem(14);
+			margin-right: rem(12);
+			background: transparent;
+			transition: 400ms;
+		}
+
+		.sign-in:hover {
+			background: $white;
+		}
+
+		.sign-up {
+			padding: 15px 36px;
+			margin-right: rem(12);
+			border: none;
+			font-size: rem(14);
+			transition: 400ms;
+			background: $white;
+		}
+	}
+
+}
+
+.close-menu {
+	width: 30px;
+	height: 30px;
+}
+
+.menu {
+	width: 30px;
+	height: 30px;
+}
+
+@include mq('xl', max) {
+	.main-navbar {
+		.navbar {
+			display: none;
+		}
+
+		.humburger {
+			display: block;
+		}
+	}
+}
+
+//===========================================
+// -Navbar end
+//===========================================

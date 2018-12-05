@@ -1,0 +1,310 @@
+//===========================================
+// -Home Page start
+//===========================================
+.features-container {
+	padding-top: 4.25rem;
+	text-align: center;
+	.feature {
+		background-color: $white;
+		width: 396px;
+		padding: 0;
+		float: left;
+		border-radius: 10px;
+		padding: 5px 0px;
+		border-bottom: 5px solid transparent;
+		border-image: linear-gradient(to right, $green);
+		border-image-slice: 1;
+
+		&:nth-child(2) {
+			border-bottom: none;
+		}
+	}
+
+	.water-mark {
+		background-image: url('../images/water-mark2.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		padding: 40px 40px;
+		position: relative;
+
+		h4,
+		p {
+			text-align: center;
+
+		}
+	}
+
+	.water-mark2 {
+		background-image: url('../images/water-mark.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		padding: 40px 10px;
+		position: relative;
+	}
+
+	.trans {
+		padding-top: 10px;
+		padding-bottom: 16px;
+		margin-top: 0px;
+		transform: scale(1.2);
+	}
+
+	.trans:hover {
+		box-shadow: 0px 0px 17px 0px rgba(227, 223, 227, 1);
+	}
+
+	.man {
+		height: 100px;
+	}
+
+	P {
+		font-size: rem(14);
+		margin-bottom: rem(45);
+		color: #afbcc1;
+	}
+
+	a {
+		text-decoration: none;
+		color: #38d491;
+		border-bottom: 1px solid #38d491;
+	}
+
+	.check {
+		text-align: center;
+		padding: 5px;
+		position: absolute;
+		margin-top: rem(-20);
+		margin-left: rem(132);
+
+		.start {
+			padding: 18px 27px;
+			font-size: rem(12);
+			font-weight: bold;
+			background: linear-gradient(to right, $green);
+			color: $white;
+			border: none;
+			border-radius: rem(30);
+		}
+
+		@include mq-only('sm', 'xl') {
+			margin-left: rem(245);
+		}
+	}
+
+}
+
+.center-logo-container {
+	background-color: $white;
+	border-radius: 10px;
+	padding: 20px;
+	margin-top: rem(-20);
+
+	.full-logo {
+		background: url(../images/full-logo.png);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 20px;
+		height: 200px;
+		width: 22%;
+		// height: 410px;
+		margin: 0 auto;
+	}
+
+	h2 {
+		margin-top: 100px;
+		text-align: center;
+		color: #2d3b3e;
+		letter-spacing: 1px;
+		font-size: 32px;
+	}
+
+	@include mq-only('sm', 'xl') {
+		.full-logo {
+			padding: 3px;
+			margin: 0 auto;
+			width: 35%;
+		}
+
+		h2 {
+			font-size: 16px;
+		}
+	}
+
+	@include mq('sm', max) {
+		.full-logo {
+			padding: 0;
+			margin: 0 auto;
+			width: 40%;
+		}
+
+		h2 {
+			font-size: 16px;
+		}
+	}
+
+}
+
+.information-container {
+	background: #f7f8f9;
+	margin-top: 60px;
+	padding-top: 12px;
+	text-align: center;
+
+	ul {
+		list-style-type: none;
+		text-align: center;
+		display: inline-block;
+
+		li {
+			float: left;
+			padding-top: 20px;
+
+
+
+			&:nth-child(1) {
+				a {
+					color: #38d491;
+					border-bottom: 1px solid #38d491;
+					padding-bottom: 1px;
+					letter-spacing: 1px;
+				}
+
+			}
+
+			a {
+				color: #8fa3aa;
+				text-decoration: none;
+				letter-spacing: 1px;
+				font-size: rem(18);
+				margin: 4.75rem;
+			}
+
+			a:hover {
+				color: #38d491;
+				border-bottom: 1px solid #38d491;
+				padding-bottom: 1px;
+				letter-spacing: 1px;
+				cursor: pointer;
+			}
+		}
+
+		@include mq('lg', max) {
+			ul {
+				display: inline-grid;
+			}
+
+			li {
+				float: none;
+				text-align: center;
+			}
+		}
+	}
+
+	@include mq('sm', max) {
+		a {
+			font-size: rem(25);
+			margin: 1.75rem;
+		}
+	}
+}
+
+@include mq-only('sm', 'xl') {
+	.features-container {
+		text-align: center;
+
+		.feature {
+			min-width: 550px;
+			float: none;
+			display: inline-block;
+			margin: rem(50) rem(0);
+		}
+	}
+}
+
+.account-details {
+	padding: 0 0%;
+	background: linear-gradient(to left, $green);
+
+
+	.full-logo {
+		background: url(../images/full-logo.png);
+
+
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		float: right;
+		height: 410px;
+		width: 70%;
+
+		h1 {
+			color: $white;
+			font-size: rem(92);
+			margin-bottom: 12px;
+		}
+
+		P {
+			font-size: rem(24);
+			color: $white;
+			margin-left: 0px;
+		}
+
+		button {
+			border: 1px solid $white;
+			background: transparent;
+			color: $white;
+			padding: rem(20) rem(30);
+			border-radius: 40px;
+			font-size: rem(14);
+			font-weight: bold;
+		}
+
+		button:hover {
+			background: $white;
+			color: $black;
+		}
+
+		.account-cont {
+			padding-left: 8%;
+		}
+	}
+
+	.insurance-container {
+		width: 30%;
+	}
+
+	.insurance-image {
+		background: url('../images/insurence.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 410px;
+		position: relative;
+		margin-top: 0px;
+		padding: 0;
+
+		h1 {
+			color: $white;
+			font-size: rem(60);
+			font-weight: bold;
+			margin: 0 auto;
+			text-align: center;
+			padding-top: 35%;
+
+		}
+
+		.arrows {
+			position: absolute;
+			right: 0;
+			top: 30%;
+			margin-right: rem(-58);
+		}
+	}
+}
+
+//===========================================
+// -Home Page end
+//===========================================

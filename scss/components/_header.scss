@@ -1,0 +1,93 @@
+//===========================================
+// -Header start
+//===========================================
+
+
+.main-header{
+	position: relative;
+	height: 700px;
+	
+	
+	.background{
+		background: url('../images/bg-image.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 900px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		z-index: -2;
+	}
+
+	.layout{
+		background-color: rgba($black, 0.6);
+		width: 100%;
+		height: 900px;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+	}
+	
+}
+
+
+.ewesta-head{
+	margin-left: 18%;
+	margin-top: 10%;
+	h3{
+		color: $white;
+		font-size: rem(50);
+		font-weight: 300;
+		font-family: 'Montserrat', sans-serif;
+		letter-spacing: 1px;
+	}
+	span{
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+		background: -webkit-linear-gradient($green);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	p{
+		font-family: 'Montserrat', sans-serif;
+		color:$white;
+		letter-spacing: 1px;
+	}
+	.learn{
+		padding: 18px 32px;
+		border: none;
+		font-size: rem(14);
+		background: linear-gradient(to right, $green);
+		color: $white;
+		border-radius: rem(30);
+		margin-top:rem(30);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//===========================================
+// -Header end
+//===========================================

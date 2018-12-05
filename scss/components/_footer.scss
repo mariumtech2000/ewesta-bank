@@ -1,0 +1,150 @@
+//===========================================
+// -Footer start
+//===========================================
+
+//top footer
+
+.information {
+	padding-bottom: rem(60);
+
+	.contact {
+		padding: rem(50);
+	}
+
+	.logo-side {
+		padding: rem(10);
+		float: left;
+
+		.logo {
+			width: 50px;
+			height: 50px;
+			display: inline-block;
+			vertical-align: middle;
+			padding: rem(18);
+		}
+
+		a {
+			margin: rem(20);
+			text-decoration: none;
+			color: #8fa3aa;
+			font-weight: bold;
+			font-size: rem(24);
+		}
+
+		h2 {
+			margin: rem(18);
+			padding: rem(18);
+			padding-bottom: rem(30);
+			color: #2d3b3e;
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				width: 63px;
+				height: 1px;
+				background: #e9edee;
+				top: 100%;
+				left: 20px;
+			}
+		}
+
+		i {
+			color: #a8e13a;
+			padding-left: 35px;
+			padding-right: rem(8);
+			font-size: rem(12);
+		}
+
+		.contact-us {
+			margin-top: rem(60);
+			font-size: rem(16);
+			color: #8fa3aa;
+		}
+
+		.follow-links {
+			margin: rem(39);
+
+			img {
+				padding: rem(10);
+			}
+		}
+	}
+
+	.online-information {
+		text-align: center;
+		float: right;
+	}
+
+	.banking {
+		float: left;
+		padding-left: rem(100);
+
+		h2 {
+			margin: rem(0);
+			padding-bottom: rem(30);
+			text-align: left;
+			color: #2d3b3e;
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				width: 63px;
+				height: 1px;
+				background: #e9edee;
+				top: 100%;
+				left: 0px;
+			}
+		}
+
+		ul {
+			list-style: none;
+			padding-top: rem(20);
+			padding: 0px;
+			text-align: left;
+
+			li {
+				text-align: left;
+				margin: rem(16) rem(16) rem(16) rem(0);
+				font-size: rem(14);
+				color: #8fa3aa;
+			}
+
+			li:hover {
+				color: #a8e13a;
+				cursor: pointer;
+			}
+
+			@include mq-only('sm', 'md') {
+				font-size: rem(18);
+				margin: 20px 0px;
+			}
+		}
+	}
+
+	@include mq-only('sm', 'md') {
+		.banking {
+			margin: 25px 0px;
+			font-size: rem(20);
+		}
+
+		.contact {
+			text-align: center;
+		}
+	}
+}
+
+
+footer {
+	border-top: 2px solid #e9edee;
+	padding: 1%;
+	text-align: center;
+	font-size: rem(16);
+	letter-spacing: 1px;
+	color: #8fa3aa;
+}
+
+//===========================================
+// -Footer end
+//===========================================
